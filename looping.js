@@ -9,3 +9,11 @@ while(j<=10){
     console.log(j + " x " + j + " = " + (j*j));
     j++;
 } 
+//do while loop
+let count=1;
+do{
+    console.log(count);
+    count++;
+}
+while(count<=10)
+    console.log("end of program");

@@ -1,4 +1,4 @@
-function greet() {
+unction greet() {
     console.log("Hello, World!");
 }
 

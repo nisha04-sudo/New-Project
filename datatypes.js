@@ -17,7 +17,7 @@ console.log("datatypes string");
 
 //BigInt
  console.log("data types bigInt");
- var big = "133324455678";
+ var big = 133324455678n;
  console.log(big);
 
 //null
@@ -27,7 +27,7 @@ console.log("datatypes string");
 
 //symbols
  console.log("data types symbols");
- var symbolsvalue = ('symbols');
+ var symbolsvalue = Symbol('symbols');
  console.log(symbolsvalue);
 
  //undefined
@@ -41,7 +41,7 @@ console.log("datatypes string");
         name:"help",
         age:5
     };
-    console.log(person,age);
+    console.log(person.age);
 
     //Array
     console.log("Array");
