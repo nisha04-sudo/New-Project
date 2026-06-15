@@ -10,10 +10,10 @@ while(j<=10){
     j++;
 } 
 //do while loop
-let count=1;
+let count=0;
 do{
     console.log(count);
     count++;
 }
-while(count<=10)
+while(count<=20)
     console.log("end of program");
