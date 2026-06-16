@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //CAMEL CASE
+        const studentPromise =
+            //resolve or reject
+            new Promise(function(resolve, reject) {
+
+                console.log("Promise is pending...");
+
+                let success = false;
+
+                setTimeout(function() {
+                    console.log("inside setTimeout...");
+
+                    if (success) {
+                        // If the promise is successful, resolve it
+                        console.log("Promise is resolved...");
+                        resolve("Promise resolved successfully!");
+                    }
+
+                    else {
+                        // If the promise fails, reject it
+                        console.log("Promise is rejected...");
+                        reject("Promise rejected.");
+                    }
+                }, 3000); // Simulate an asynchronous operation with a timeout
+
+            })
+            // Handle the resolved or rejected promise using then and catch
+            //for printing the result of the promise
+        studentPromise
+            .then(function(result) {
+                console.log("inside then");
+                console.log(result);
+
+            })
+            .catch(function(error) {
+                console.log("inside catch");
+                console.log(error);
+
+            });
+
+    </script>
+</body>
+
+</html>

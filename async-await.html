@@ -1,0 +1,29 @@
+//to avoid then and catch we can use async and await LIKE PROMISE
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //CAMEL CASE
+        function getStudent(){
+            return new Promise(function(resolve){
+                console.log("Promise is pending...");
+                
+                setTimeout(function(){
+                    resolve("Arun");
+
+                },3000);
+
+            });
+        }
+        //Async is keyword
+        async function displayStudent(){
+        console.log(" loaded student..");
+        let student = await getStudent();
+        console.log(student);
+    }
+    displayStudent();
+    </script>
+    
+</body>
+</html>

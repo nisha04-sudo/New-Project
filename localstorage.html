@@ -1,0 +1,20 @@
+
+<input type="text"  id="studentName">
+
+<button onclick="saveName()">Save Name</button>
+<button onclick="getName()">Get Name</button>   
+<p id="displayName"></p>
+<script>
+    function saveName() {
+        let name = document.getElementById("studentName").value;//name = vet
+        localStorage.setItem("name", name);
+
+        alert("Name saved to local storage!");
+    }
+
+    function getName() {
+        let name = localStorage.getItem("name");
+        document.getElementById("displayName").innerText = name;
+        alert("Name retrieved from local storage!");
+    }
+</script>
